@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poly</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Poly</h1>
+    <p>
+      Szabályos poligon területének számítása.
+    </p>
+
+    <form id="polyForm">
+      <div class="mb-3">
+         <label for="sideLength" class="form-label">a oldal</label>
+         <input type="text"
+         class="form-control" id="sideLength">
+      </div>
+      <div class="mb-3">
+         <label for="numSides" class="form-label">n darab</label>
+         <input type="text"
+         class="form-control" id="numSides">
+      </div>
+      <button type="submit" class="btn btn-primary">Számít</button>
+      <div class="mb-3">
+         <label for="area" class="form-label">Terület</label>
+         <input type="text"
+         class="form-control" id="area">
+      </div>
+      
+    </form>
+
+  </div>
+    
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
