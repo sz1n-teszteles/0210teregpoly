@@ -10,6 +10,9 @@ describe('calcArea() fuggveny tesztelese', () => {
         const expected = calcArea(135, 30)
         expect(expected).to.closeTo(1300494.69, 0.1)
     })
+    it('0,30 hiba', () => {
+        expect(() => calcArea(0,30).throw(Error))
+    })
     it('in: 30, 2; out: hiba', () => {
         const expected = calcArea(30,2)
         expect(expected).to.throw
