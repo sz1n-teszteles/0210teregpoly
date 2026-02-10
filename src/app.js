@@ -1,6 +1,7 @@
 import * as bootstrap from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.css'
+import { calcArea } from './poly.js'
 
 const doc = {
     polyForm: document.getElementById('polyForm'),
@@ -37,8 +38,4 @@ function updateArea(){
     }
 }
 
-function calcArea(sideLength, numSides) {
-    return (numSides * Math.pow(sideLength, 2)) 
-    / (4 * Math.tan(Math.PI/numSides))
-}
 
